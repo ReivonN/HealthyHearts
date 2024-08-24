@@ -1,0 +1,379 @@
+body {
+    background: linear-gradient(180deg, rgba(255,251,244,1) 0%, rgba(255,141,141,1) 100%); 
+    background-repeat: no-repeat;
+    margin: 0 0;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 85%;
+    background-image: url('../Assets/cellBG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% -10%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 100%;
+}
+
+.modalBG {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(131, 130, 130, 0.4);
+    position: fixed;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    padding: 2rem;
+    opacity: 1;
+    background-color: #FFD7D7;
+}
+
+.modal h3 {
+    margin: 2rem;
+}
+
+.modal p{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+}
+
+.modal p:hover {
+    cursor: pointer;
+}
+
+/* ABOUT PAGE */
+.grid3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.grid3 img {
+    grid-column: 1/2;
+    max-width: 100%;
+    width: 90%;
+    margin: auto auto;
+}
+
+.grid3 div {
+    grid-column: 2/4;
+}
+
+.aboutText {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.aboutText p {
+    margin: 0 4rem;
+}
+
+/* Learn More */
+.learnMore {
+    width: 70%;
+    max-width: 100%;
+    margin: auto auto;
+}
+
+.learnMore .content {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.content p{
+    margin-left: 4rem;
+    margin-top: .5rem;
+}
+
+.content button {
+    width: 80%;
+    margin: 0 4rem;
+    margin-bottom: 1rem;
+}
+
+.learnMore img {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* NavBar */
+#nav {
+    grid-column: 2/3;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 40% auto 40%;
+    margin-top: 2rem;
+    list-style: none;
+}
+
+#logoType {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+#logoType img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+nav a {
+    margin: auto 0;
+    margin-left: 1rem;
+    color: #ED1F24;
+    font-family: 'Days One',sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#navItems {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column: 3/4;
+    list-style: none;
+    padding: 0;
+    margin: auto auto;
+}
+
+#navItems a {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Manjari',sans-serif;
+    font-size: 1.2rem;
+    margin: auto 1rem;
+}
+
+nav a.active {
+    color: #252525;
+}
+
+button {
+    background-color: #ED1F24;
+    border: #252525 3px solid;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px #252525);
+    padding: .5rem 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+button:hover {
+    color: #FFD7D7;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* TYPOGRAPHY */
+h1, h3 {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0;
+    margin-top: .5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+p {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* XL devices */
+/* @media only screen and (min-width:1200px) {
+    nav a {
+        font-size: 2.5rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    #navItems a, h2, h4, .list h4, button {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size:1.25rem
+    }
+} */
+
+@media only screen and (width < 1483px) {
+    nav {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* medium devices */
+@media only screen and (width <= 992px) {
+    /* navbar  */
+    #navItems a {
+        font-size: 1rem;
+    }
+    #logoType{
+        display: flex;
+    }
+    #logoType img,.grid3 img,.learnMore img,.avatarImage {
+        display: none;
+    }
+    nav a {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    #navItems a, h2, h4, .list h4, button {
+        font-size: 1rem;
+    }
+    .grid3 div {
+        grid-column: 1/4;
+    }
+    .content button {
+        max-width: 70%;
+        font-size: .8rem;
+    }
+    .content p {
+        font-size: .7rem;
+    }
+    .step form {
+        grid-column: 1/3;
+    }
+    .backBtn {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+    }
+    .buttonSteps{
+        margin: 0;
+    }
+    .inputTxt {
+        height: 1.5rem;
+    }
+    .dropDown {
+        height: 2rem;
+    }
+    .nextBtn {
+        margin: 1rem 0;
+    }
+    .smallBox h1 {
+        font-size: 1.5rem;
+    }
+    .riskTreatment h3 {
+        font-size: 1rem;
+    }
+    .result .last2Col h1 {
+        font-size:5rem;
+    }
+
+    @media only screen and (width <= 600px) {
+        .app {
+            grid-template-rows: auto auto;
+        }
+        #nav{
+            grid-column: 1/4;
+            height: fit-content;
+        }
+        nav {
+            display: inline;
+        }
+        #logoType {
+            font-size: 3rem;
+            justify-content: center;
+        }
+        #navItems {
+            /* display: inline; */
+            grid-column: 1/2;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .container {
+            grid-column: 1/4;
+            height: 100%;
+        }
+        .content p, .content button {
+            font-size: 1.25rem;
+        }
+        .calcInfo img {
+            max-width: 80%;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        h2,h4,.list h4, button {
+            font-size: 1.5rem;
+        }
+        .formElements {
+            grid-column: 1/4;
+        }
+        .formElements {
+            margin: 0 2rem;
+        }
+        p {
+            font-size: 2rem;
+        }
+        .inputTxt {
+            height: 3rem;
+        }
+        .dropDown {
+            height:3.5rem
+        }
+        .inputTxt, .dropDown {
+            font-size: 1.25rem;
+        }
+        .nextBtn {
+            margin: 3rem auto;
+        }
+        .buttonSteps {
+            font-size: 1rem;
+        }
+        .result .first2Col, .result .last2Col {
+            grid-column: 1/5;
+        }
+        .smallBox h1 {
+            font-size: 3rem;
+        }
+        .riskTreatment h3 {
+            font-size: 1.25rem;
+        }
+    }
+}

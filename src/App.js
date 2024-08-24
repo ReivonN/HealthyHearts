@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import RiskCalc from './components/RiskCalc';
+import About from './components/About';
+import LearnMore from './components/LearnMore';
 
 function App() {
+  let component;
+  switch(window.location.pathname) {
+    // case "/home":
+    //   component = <Home /> 
+    //   break
+    case "/riskcalculator":
+    case "/":
+      component = <RiskCalc/> 
+      break
+    case "/about":
+      component = <About /> 
+      break
+    case "/learnmore":
+      component = <LearnMore />  
+      break
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <NavBar/>
+      <div className="container">
+        {component}
+      </div>
     </div>
   );
 }

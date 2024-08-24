@@ -1,0 +1,358 @@
+/* RISK CALCULATOR */
+.calcInfo {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 100%;
+}
+
+.calcInfo img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 30vw;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+}
+
+.list h4 {
+    font-size: 1.2rem;
+}
+
+.centre {
+    grid-column: 2/3;
+}
+
+.startBtn {
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+.toDisplay{
+    display: none;
+    position: absolute;
+    top: 58%;
+    left: 57%;
+    right: 20%;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.moreInfo {
+    position: relative;
+    background-color: #FFA7A9;
+    border: #252525 solid 3px;
+    border-radius: 25px;
+    padding-left: .7rem;
+    padding-right: .7rem;
+    margin: 0 1rem;
+    filter: drop-shadow(3px 3px #252525);
+}
+
+.moreInfo:hover {
+    color: #FFE7E7;
+}
+
+.moreInfo:hover + .toDisplay {
+    display: block;
+}
+
+.pinkContainer {
+    border: #252525 solid 3px;
+    border-radius: 20px;
+    filter: drop-shadow(4px 4px #252525);
+    background-image: radial-gradient(#FFE7E7, #FF9493);
+}
+
+.step {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.step form {
+    grid-column: 1/2;
+    display: grid;
+}
+
+.resultContainer {
+    display: grid;
+}
+
+.step form, .resultContainer {
+    grid-template-columns: 10% auto 10%;
+}
+
+.infoElements, .formElements, .resultElements {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.backBtn {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.full4Col {
+    grid-column: 1/5;
+}
+
+.formElements .buttonSteps {
+    margin: 1rem;
+}
+
+.buttonSteps button {
+    margin: auto;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+.currStep {
+    color: #FFD7D7;
+}
+
+.currStep:hover {
+    font-weight: 500;
+    cursor: default;
+}
+
+.inactive, .prevStep {
+    filter: none;
+    background-color: #FFA7A9;
+    font-weight: 400;
+}
+
+.inactive {
+    opacity: .5;
+}
+
+.inactive:hover {
+    color: #000;
+    font-weight: 400;
+    cursor: not-allowed;
+}
+
+.label {
+    margin-top: .6rem;
+    margin-bottom: .2rem;
+    font-family: 'Poppins',sans-serif;
+    font-size: .9rem;
+}
+
+.inputTxt, .dropDown {
+    max-width:100%;
+    font-size: 1rem;
+    padding-left: 1rem;
+    border-radius: 10px;
+    border: #252525 solid 3px;
+    filter: drop-shadow(4px 4px #FD5F63);
+    font-family: 'Poppins',sans-serif;
+    background: #FFC6C7;
+}
+
+.inputTxt {
+    height: 2rem;
+}
+
+.dropDown {
+    height: 2.5rem;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.first3Col {
+    grid-column: 1/4;
+}
+
+.first2Col {
+    grid-column: 1/3;
+}
+
+.middle2Col {
+    grid-column: 2/4;
+}
+
+.last2Col {
+    grid-column: 3/5;
+}
+
+.unsureBtn {
+    grid-column: 3/4;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    margin-top: .5rem;
+    text-align: end;
+}
+
+.nextBtn {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.avatarImage {
+    height: auto;
+    width: 100%;
+    max-width: 25vw;
+    max-height: auto;
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.result {
+    max-height: 100%;
+}
+
+.resultContainer, .resultElements {
+    height: 100%;
+}
+
+.resultElements .buttonSteps {
+    margin: .5rem 1rem;
+    padding: .3rem;
+}
+
+.result h4 {
+    background-color: #FB5458;
+    border: #252525 solid 3px;
+    border-radius: 10px;
+    margin: -.15rem;
+}
+
+.result .first2Col {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.smallBox {
+    background-color: #FFC6C7;
+    border: #252525 solid 3px;
+    border-radius: 10px;
+    text-align: center;
+    filter: drop-shadow(4px 4px #252525);
+}
+
+.smallBox h1 {
+    font-size: 3rem;
+    margin: auto auto;
+}
+
+.riskCategory {
+    grid-row: 1/2;
+    height: fit-content;
+    margin: 1rem;
+}
+
+.riskTreatment {
+    grid-row: 2/3;
+    margin: 1rem;
+    height: fit-content;
+}
+
+.riskTreatment h3 {
+    max-width: 22rem;
+    margin: auto auto;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.guidelines {
+    margin: 1rem auto;
+}
+
+.first2Col p {
+    grid-row: 3/4;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.result .last2Col {
+    margin: auto auto;
+    width: 100%;
+    height: 100%;
+}
+
+.result .last2Col img {
+    width: 80%;
+    height: auto;
+    margin: auto 3rem;
+}
+
+.result .last2Col h1 {
+    margin: 0;
+}
+
+.result .last2Col p {
+    text-align: center;
+    margin: auto auto;
+}
+
+.resetBtn {
+    margin: 2rem 0;
+}
+
+.result .last2Col h1 {
+    font-family: 'Days One',sans-serif;
+    font-size: 5rem;
+    color: #F0555A;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.result .backBtn {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Custom radio button from  https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+   /* Customize the label (the container) */
+.unsureBtn {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .unsureBtn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 28%;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #FFE7E7;
+    border: #252525 3px solid;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px #252525);
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .unsureBtn:hover input ~ .checkmark {
+    background-color: #FD5F63;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .unsureBtn input:checked ~ .checkmark {
+    background-color: #ED1F24;
+  }
