@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/HealthyHearts/static/css/main.aa0188be.css",
+    "main.js": "/HealthyHearts/static/js/main.117dc497.js",
+    "static/media/cellBG.png": "/HealthyHearts/static/media/cellBG.0d4641ee11f5eb54f604.png",
+    "static/media/logoHeart.png": "/HealthyHearts/static/media/logoHeart.49d86d7ab96de6838c81.png",
+    "static/media/HeartResultLow.png": "/HealthyHearts/static/media/HeartResultLow.102c2b73df5a8ac1f771.png",
+    "static/media/HeartResultModerate.png": "/HealthyHearts/static/media/HeartResultModerate.7fcf2737b04a656ca53c.png",
+    "static/media/healthyHeartsLogo3.png": "/HealthyHearts/static/media/healthyHeartsLogo3.68fe7a07f83cae73b2b0.png",
+    "static/media/HeartResultHigh.png": "/HealthyHearts/static/media/HeartResultHigh.a18ffbec0826e7953074.png",
+    "static/media/healthyHeartsLogo.png": "/HealthyHearts/static/media/healthyHeartsLogo.543de896f11c7e4806a2.png",
+    "index.html": "/HealthyHearts/index.html",
+    "main.aa0188be.css.map": "/HealthyHearts/static/css/main.aa0188be.css.map",
+    "main.117dc497.js.map": "/HealthyHearts/static/js/main.117dc497.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa0188be.css",
+    "static/js/main.117dc497.js"
+  ]
+}
